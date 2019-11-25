@@ -1,0 +1,5 @@
+g++ -g  -o0  -I/usr/local/include -I/usr/local/boost/include -c source/listen.cpp -o output/main.o
+g++ -g  -o0  -I/usr/local/include -I/usr/local/boost/include -c source/mysql.cpp -o output/mysql.o
+g++ -g  -o0  -I/usr/local/include -I/usr/local/boost/include -c source/socket.cpp -o output/socket.o
+
+g++ -g  -o0 -L/usr/local/lib -L/usr/local/mysql/lib output/main.o output/mysql.o output/socket.o -o serverListen -lmysqlcppconn

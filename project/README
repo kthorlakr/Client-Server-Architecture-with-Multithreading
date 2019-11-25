@@ -1,0 +1,29 @@
+# Client/Server Architecture with Multithreading
+
+Enclosed are three folders.  Make sure to turn on the server first.  The client will connect to the server on localhost:8080.  You will also need MySQL.  The mysql folder contains a schema build script.  
+
+## Execute
+
+-server-
+./MakeFile 
+./deploy.sh
+
+-client-
+./serverClient 127.0.0.1 8080
+
+# Requirements
+
+
+    Ubuntu (Linux) (POSIX env.)
+        Apt-get
+            build-essential
+            manpages-dev
+            libmysqlcppconn-dev
+            libmysqlclient-dev
+    G++ v7.4.0 compiler
+    MySql v14.14 for Linux
+        MySql C++ Connector
+
+# further documentation
+
+Please have a look at the attached pdf file. 'client.server.multithreading.documentation.pdf' 

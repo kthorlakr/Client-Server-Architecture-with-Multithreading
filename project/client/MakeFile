@@ -1,0 +1,5 @@
+g++ -g  -o0  -I/usr/local/include -I/usr/local/boost/include -pthread -c source/Client.cpp -o output/main.o
+g++ -g  -o0  -I/usr/local/include -I/usr/local/boost/include -c source/socket.cpp -o output/socket.o
+
+g++ -g  -o0 -L/usr/local/lib -pthread output/main.o output/socket.o -o serverClient
+
